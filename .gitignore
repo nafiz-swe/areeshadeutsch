@@ -1,0 +1,17 @@
+node_modules
+dist
+*.local
+.DS_Store
+# Signing secrets – never commit
+*.jks
+*.keystore
+keystore.base64
+android/local.properties
+android/.gradle
+android/build
+android/app/build
+android/capacitor-cordova-android-plugins/build
+android/app/src/main/assets/public
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+android/app/src/main/res/xml/config.xml

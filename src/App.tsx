@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { lessons } from './data/lessons';
 import { vocab, vocabCategories } from './data/vocab';
 import { verbs, pronouns, prepositions, goethe } from './data/reference';
+import { norm, verbIndex } from './data/verbs';
 import { questions } from './data/quiz';
-import type { Lesson, Level, Table } from './data/types';
+import type { Deep, Lesson, Level, Table } from './data/types';
 import { emptyProgress, usePersistent, type Progress } from './storage';
 import { initNative, openWhatsApp, registerBackButton } from './native';
 
@@ -182,6 +183,7 @@ function LessonView({ lesson, progress, toggle }: { lesson: Lesson; progress: Pr
       </Card>
       <Card><h3 className="mb-1 font-semibold">English</h3><p className="leading-relaxed">{lesson.en}</p></Card>
       <Card><h3 className="mb-1 font-semibold">اردو</h3><p className="urdu">{lesson.ur}</p></Card>
+      {lesson.deep && <DeepView deep={lesson.deep} />}
       {lesson.tables?.map((t, i) => <Card key={i}><TableView t={t} /></Card>)}
       <Card>
         <h3 className="mb-2 font-semibold">Examples · مثالیں</h3>
@@ -194,6 +196,30 @@ function LessonView({ lesson, progress, toggle }: { lesson: Lesson; progress: Pr
         <button onClick={() => toggle('completed', lesson.id)} className={`flex-1 rounded-xl py-3 font-semibold ${done ? 'bg-green-100 text-green-700' : 'bg-sky-500 text-white'}`}>{done ? '✓ Completed' : 'Mark as complete'}</button>
         <button onClick={() => toggle('bookmarks', lesson.id)} className={`rounded-xl px-4 py-3 ${marked ? 'bg-amber-100' : 'bg-white border border-sky-200'}`} aria-label="Bookmark">{marked ? '🔖' : '🏷️'}</button>
       </div>
+    </div>
+  );
+}
+
+const DEEP_HEADS: [keyof Deep, string, string][] = [
+  ['why', 'What it is & why we use it', 'یہ کیا ہے اور کیوں استعمال کرتے ہیں'],
+  ['how', 'How to use it', 'اسے کیسے استعمال کریں'],
+  ['when', 'When to use it', 'کب استعمال کریں'],
+  ['mistakes', 'Common mistakes', 'عام غلطیاں'],
+  ['tips', 'Memory tips & practice', 'یاد رکھنے کے طریقے اور مشق'],
+];
+
+function DeepView({ deep }: { deep: Deep }) {
+  return (
+    <div className="space-y-4">
+      <h2 className="px-1 text-lg font-bold text-sky-700">In detail · تفصیل</h2>
+      {DEEP_HEADS.map(([k, h, hUr]) => (
+        <Card key={k}>
+          <h3 className="font-semibold text-sky-800">{h}</h3>
+          <div className="mt-2 space-y-2 leading-relaxed">{deep[k].en.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}</div>
+          <h3 className="urdu mt-4 border-t border-sky-100 pt-3 font-semibold text-sky-800">{hUr}</h3>
+          <div className="urdu space-y-1">{deep[k].ur.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}</div>
+        </Card>
+      ))}
     </div>
   );
 }
@@ -229,20 +255,38 @@ function Vocab({ progress, setProgress }: { progress: Progress; setProgress: (v:
 }
 
 /* ---------- Verbs ---------- */
+const VERB_KINDS = ['All', 'regular', 'strong', 'mixed', 'modal', 'irregular', 'separable', 'reflexive'] as const;
+
 function Verbs() {
-  const [open, setOpen] = useState<string | null>('sein');
+  const [open, setOpen] = useState<string | null>(null);
+  const [q, setQ] = useState('');
+  const [kind, setKind] = useState<(typeof VERB_KINDS)[number]>('All');
+  const list = useMemo(() => {
+    const nq = norm(q.trim());
+    return verbs.filter((v) => (kind === 'All' || v.type === kind) && (!nq || (verbIndex.get(v.inf) ?? '').includes(nq)));
+  }, [q, kind]);
   return (
     <div className="space-y-3">
-      {verbs.map((v) => (
+      <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search verb: German, English or اردو (e.g. gehen, to go, جانا)"
+        className="w-full rounded-xl border border-sky-200 bg-white px-4 py-2 outline-none focus:ring-2 focus:ring-sky-300" />
+      <div className="flex gap-2 overflow-x-auto pb-1">
+        {VERB_KINDS.map((k) => (
+          <button key={k} onClick={() => setKind(k)} className={`whitespace-nowrap rounded-full px-3 py-1 text-sm ${kind === k ? 'bg-sky-500 text-white' : 'border border-sky-200 bg-white text-sky-700'}`}>{k}</button>
+        ))}
+      </div>
+      <p className="text-xs text-slate-500">{list.length} of {verbs.length} verbs</p>
+      {list.length === 0 && <Card>No verb found. Try another spelling, an English meaning or an Urdu word.</Card>}
+      {list.map((v) => (
         <Card key={v.inf} className="!p-0">
-          <button onClick={() => setOpen(open === v.inf ? null : v.inf)} className="flex w-full items-center justify-between p-4 text-left">
-            <div><span className="font-bold">{v.inf}</span> <span className="text-sm text-slate-500">· {v.en}</span><div className="urdu text-sm">{v.ur}</div></div>
-            <span className="rounded-full bg-sky-100 px-2 py-0.5 text-xs text-sky-700">{v.type}</span>
+          <button onClick={() => setOpen(open === v.inf ? null : v.inf)} className="flex w-full items-center justify-between gap-2 p-4 text-left">
+            <div className="min-w-0"><span className="font-bold">{v.inf}</span> <span className="text-sm text-slate-500">· {v.en}</span><div className="urdu text-sm">{v.ur}</div></div>
+            <span className="shrink-0 rounded-full bg-sky-100 px-2 py-0.5 text-xs text-sky-700">{v.type}</span>
           </button>
           {open === v.inf && (
             <div className="px-4 pb-4">
               <TableView t={{ title: 'Präsens', head: ['Pronoun', 'Form'], rows: pronouns.map((p, i) => [p, v.present[i]]) }} />
-              <p className="mt-3 text-sm"><b>Perfekt:</b> {v.perfekt}</p><p className="text-sm"><b>Präteritum (ich):</b> {v.praeteritum}</p>
+              <p className="mt-3 text-sm"><b>Perfekt:</b> ich {v.perfekt.replace(/^(hat|ist)/, (m) => (m === 'hat' ? 'habe' : 'bin'))}</p>
+              <p className="text-sm"><b>Präteritum:</b> ich {v.praeteritum}</p>
             </div>
           )}
         </Card>

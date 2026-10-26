@@ -1,0 +1,118 @@
+import type { Deep } from './types';
+
+export const deepA1b: Record<string, Deep> = {
+  'a1-6': {
+    why: {
+      en: 'Many everyday German verbs consist of a prefix + a base verb: auf|stehen (get up), ein|kaufen (shop), an|rufen (call). In many of them the prefix is "separable": it splits from the verb and moves to the end of the sentence. This is one of the most typical features of German word order, and it appears in daily routine, travel and shopping – exactly the topics of A1.\n\nThe prefix gives the verb a new meaning: kommen (come) → ankommen (arrive), mitkommen (come along), zurückkommen (come back).',
+      ur: 'روزمرہ کے بہت سے جرمن افعال سابقہ + بنیادی فعل سے بنتے ہیں: auf|stehen (اٹھنا)، ein|kaufen (خریداری کرنا)، an|rufen (فون کرنا)۔ ان میں سے کئی میں سابقہ "الگ ہونے والا" ہوتا ہے: وہ فعل سے جدا ہو کر جملے کے آخر میں چلا جاتا ہے۔ یہ جرمن جملے کی ترتیب کی سب سے نمایاں خصوصیات میں سے ایک ہے اور روزمرہ معمول، سفر اور خریداری میں آتی ہے – یعنی A1 کے عین موضوعات۔\n\nسابقہ فعل کو نیا مطلب دیتا ہے: kommen (آنا) → ankommen (پہنچنا)، mitkommen (ساتھ آنا)، zurückkommen (واپس آنا)۔',
+    },
+    how: {
+      en: 'Main clause: conjugate the base verb in position 2 and put the prefix at the very end. "Ich stehe um 7 Uhr auf." "Der Zug kommt um 8 Uhr an." "Wir kaufen heute ein." Question: "Kommst du mit?" Imperative: "Steh auf!" "Ruf mich an!"\n\nWith a modal verb the verb stays together in the infinitive at the end: "Ich muss früh aufstehen." In the infinitive and in subordinate clauses the verb is NOT split: "..., weil ich früh aufstehe."\n\nSeparable prefixes are stressed in speech (AUF-stehen) and include: ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-, zurück-, fern-, weg-, her-, hin-. Inseparable prefixes (be-, ver-, er-, ent-, ge-, zer-, miss-) never split: "Ich besuche dich." "Er versteht mich."\n\nSee all separable verbs with their forms in the Verbs section (filter: separable).',
+      ur: 'مرکزی جملے میں بنیادی فعل کو دوسری جگہ پر تصریف کریں اور سابقہ بالکل آخر میں رکھیں۔ "Ich stehe um 7 Uhr auf." "Der Zug kommt um 8 Uhr an." "Wir kaufen heute ein."۔ سوال: "Kommst du mit؟"۔ حکم: "Steh auf!" "Ruf mich an!"۔\n\nmodal فعل کے ساتھ فعل مصدر کی شکل میں اکٹھا آخر میں رہتا ہے: "Ich muss früh aufstehen."۔ مصدر میں اور ماتحت جملوں میں فعل الگ نہیں ہوتا: "..., weil ich früh aufstehe."۔\n\nالگ ہونے والے سابقے بولتے وقت زور سے پڑھے جاتے ہیں (AUF-stehen) اور یہ ہیں: ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-, zurück-, fern-, weg-, her-, hin-۔ نہ الگ ہونے والے سابقے (be-, ver-, er-, ent-, ge-, zer-, miss-) کبھی الگ نہیں ہوتے: "Ich besuche dich." "Er versteht mich."۔\n\nتمام الگ ہونے والے افعال اور ان کی شکلیں Verbs حصے میں دیکھیں (فلٹر: separable)۔',
+    },
+    when: {
+      en: 'Use separable verbs for daily routine (aufstehen, frühstücken, einkaufen, fernsehen, aufräumen), travel (abfahren, ankommen, einsteigen, aussteigen, umsteigen), communication (anrufen, zumachen, aufmachen) and social life (einladen, mitkommen, mitbringen). They are very common in the A1 writing task: "Ich rufe dich morgen an."',
+      ur: 'روزمرہ معمول (aufstehen, frühstücken, einkaufen, fernsehen, aufräumen)، سفر (abfahren, ankommen, einsteigen, aussteigen, umsteigen)، رابطے (anrufen, zumachen, aufmachen) اور سماجی زندگی (einladen, mitkommen, mitbringen) کے لیے الگ ہونے والے افعال استعمال کریں۔ A1 کی تحریری مشق میں یہ بہت عام ہیں: "Ich rufe dich morgen an."۔',
+    },
+    mistakes: {
+      en: '1) Leaving the prefix attached in a main clause: "Ich aufstehe um 7 Uhr" is wrong. 2) Putting the prefix before the object: "Ich rufe an dich" – wrong; the prefix goes to the very end: "Ich rufe dich an." 3) Splitting an inseparable verb: "Ich suche besuch" – no, "Ich besuche dich." 4) Splitting the verb after a modal: "Ich muss stehe auf" – wrong; "Ich muss aufstehen." 5) Forgetting the prefix when giving short answers: "Kommst du mit?" – "Ja, ich komme mit."',
+      ur: '1) مرکزی جملے میں سابقہ فعل کے ساتھ لگا رہنے دینا: "Ich aufstehe um 7 Uhr" غلط ہے۔ 2) سابقہ کو مفعول سے پہلے رکھنا: "Ich rufe an dich" غلط ہے؛ سابقہ بالکل آخر میں جاتا ہے: "Ich rufe dich an."۔ 3) نہ الگ ہونے والے فعل کو الگ کرنا: درست "Ich besuche dich."۔ 4) modal کے بعد فعل کو الگ کرنا: "Ich muss stehe auf" غلط ہے؛ "Ich muss aufstehen."۔ 5) مختصر جواب میں سابقہ بھول جانا: "Kommst du mit؟" – "Ja, ich komme mit."۔',
+    },
+    tips: {
+      en: 'Think of the verb as a "bracket": the verb opens the bracket in position 2 and the prefix closes it at the end. Learn verbs as pairs in their split form: "ich stehe ... auf". Write a short morning routine using 8 separable verbs.',
+      ur: 'فعل کو "قوسین" سمجھیں: فعل دوسری جگہ پر قوس کھولتا ہے اور سابقہ آخر میں اسے بند کرتا ہے۔ افعال کو الگ شدہ شکل میں جوڑی کی طرح یاد کریں: "ich stehe ... auf"۔ 8 الگ ہونے والے افعال استعمال کر کے اپنے صبح کے معمول پر ایک مختصر پیراگراف لکھیں۔',
+    },
+  },
+
+  'a1-7': {
+    why: {
+      en: 'Modal verbs express ability, necessity, permission, wish and obligation: können (can), müssen (must), dürfen (may), wollen (want), sollen (should), mögen/möchten (like/would like). They are the easiest way to ask politely, make requests and give opinions without knowing many verb forms.\n\nThey are extremely common in the A1 exam: ordering food, asking for permission ("Darf ich ...?"), making appointments and expressing wishes.',
+      ur: 'Modal افعال صلاحیت، ضرورت، اجازت، خواہش اور ذمہ داری ظاہر کرتے ہیں: können (سکنا)، müssen (پڑنا/ضروری)، dürfen (اجازت)، wollen (چاہنا)، sollen (چاہیے)، mögen/möchten (پسند/چاہوں گا)۔ بہت سے افعال کی شکلیں جانے بغیر شائستگی سے درخواست کرنے، مانگنے اور رائے دینے کا یہ آسان ترین طریقہ ہیں۔\n\nA1 امتحان میں یہ بہت عام ہیں: کھانا آرڈر کرنا، اجازت مانگنا ("Darf ich ...؟")، اپائنٹمنٹ لینا اور خواہش بیان کرنا۔',
+    },
+    how: {
+      en: 'Sentence pattern: Subject + modal verb (position 2) + ... + main verb in the infinitive (end). "Ich kann gut kochen." "Du musst heute lernen." "Wir wollen nach Berlin fahren." Question: "Kannst du mir helfen?" Negative: "Ich kann nicht kommen." With a separable verb: "Ich möchte um 6 Uhr aufstehen."\n\nMeanings: können = ability/possibility ("Ich kann Auto fahren"); müssen = must/necessity ("Ich muss arbeiten"); dürfen = permission ("Hier darf man nicht rauchen"); wollen = strong wish/plan ("Ich will Arzt werden"); sollen = duty/advice ("Du sollst mehr schlafen"); möchten = polite wish ("Ich möchte einen Tee"); mögen = to like something ("Ich mag Pizza").\n\nThe singular forms ich and er/sie/es are identical (ich kann – er kann), and the stem vowel changes in the singular: können → kann; müssen → muss; wollen → will; dürfen → darf; sollen → soll (no change); möchten → möchte. See the table above for all forms.',
+      ur: 'جملے کی ساخت: فاعل + modal فعل (دوسری جگہ) + ... + اصل فعل مصدر میں (آخر میں)۔ "Ich kann gut kochen." "Du musst heute lernen." "Wir wollen nach Berlin fahren."۔ سوال: "Kannst du mir helfen؟"۔ نفی: "Ich kann nicht kommen."۔ الگ ہونے والے فعل کے ساتھ: "Ich möchte um 6 Uhr aufstehen."۔\n\nمعانی: können = صلاحیت/امکان ("Ich kann Auto fahren")؛ müssen = ضرورت/لازمی ("Ich muss arbeiten")؛ dürfen = اجازت ("Hier darf man nicht rauchen")؛ wollen = مضبوط خواہش/ارادہ ("Ich will Arzt werden")؛ sollen = فرض/مشورہ ("Du sollst mehr schlafen")؛ möchten = شائستہ خواہش ("Ich möchte einen Tee")؛ mögen = کسی چیز کو پسند کرنا ("Ich mag Pizza")۔\n\nواحد میں ich اور er/sie/es کی شکل ایک جیسی ہوتی ہے (ich kann – er kann) اور واحد میں جڑ کا حرفِ علت بدل جاتا ہے: können → kann؛ müssen → muss؛ wollen → will؛ dürfen → darf؛ sollen → soll (تبدیلی نہیں)؛ möchten → möchte۔ تمام شکلوں کے لیے اوپر کا جدول دیکھیں۔',
+    },
+    when: {
+      en: 'Use "möchten" in restaurants and shops: "Ich möchte eine Pizza, bitte." Use "können" to ask for help or possibility: "Können Sie mir helfen?" Use "dürfen" for permission and rules: "Darf ich hier sitzen?" – "Hier darf man nicht parken." Use "müssen" for duties and necessity: "Ich muss zum Arzt." Use "wollen" for plans: "Wir wollen im Sommer reisen." Use "sollen" for advice from others: "Der Arzt sagt, ich soll Tabletten nehmen."',
+      ur: 'ریستورانوں اور دکانوں میں "möchten": "Ich möchte eine Pizza, bitte."۔ مدد یا امکان پوچھنے کے لیے "können": "Können Sie mir helfen؟"۔ اجازت اور قواعد کے لیے "dürfen": "Darf ich hier sitzen؟" – "Hier darf man nicht parken."۔ ذمہ داری اور ضرورت کے لیے "müssen": "Ich muss zum Arzt."۔ منصوبوں کے لیے "wollen": "Wir wollen im Sommer reisen."۔ دوسروں کے مشورے کے لیے "sollen": "Der Arzt sagt, ich soll Tabletten nehmen."۔',
+    },
+    mistakes: {
+      en: '1) Using "zu" with the infinitive: "Ich kann zu schwimmen" – wrong; "Ich kann schwimmen." 2) Conjugating the main verb: "Ich kann schwimme" – wrong; the main verb stays in the infinitive. 3) Adding -t to ich: "ich kannt" – wrong; "ich kann". 4) Confusing "müssen nicht" (do not have to) with "nicht dürfen" (must not): "Du musst nicht kommen" = it is not necessary; "Du darfst nicht kommen" = it is forbidden. 5) Putting the infinitive in the wrong place: it belongs at the very end.',
+      ur: '1) مصدر کے ساتھ "zu" لگانا: "Ich kann zu schwimmen" غلط ہے؛ "Ich kann schwimmen."۔ 2) اصل فعل کی تصریف کرنا: "Ich kann schwimme" غلط ہے؛ اصل فعل مصدر ہی رہتا ہے۔ 3) ich کے ساتھ -t لگانا: "ich kannt" غلط ہے؛ "ich kann"۔ 4) "müssen nicht" (ضروری نہیں) اور "nicht dürfen" (ممنوع) میں الجھنا: "Du musst nicht kommen" = آنا ضروری نہیں؛ "Du darfst nicht kommen" = آنا منع ہے۔ 5) مصدر کو غلط جگہ رکھنا؛ اسے بالکل آخر میں ہونا چاہیے۔',
+    },
+    tips: {
+      en: 'Learn the six modal verbs with their ich-form first (kann, muss, will, darf, soll, möchte). Make one sentence for each modal about yourself. Use "Ich möchte ..." and "Kann ich ...?" in every situation to practise polite language.',
+      ur: 'پہلے چھ modal افعال کو ich کی شکل کے ساتھ یاد کریں (kann, muss, will, darf, soll, möchte)۔ ہر modal کے ساتھ اپنے بارے میں ایک جملہ بنائیں۔ شائستہ زبان کی مشق کے لیے ہر صورتِ حال میں "Ich möchte ..." اور "Kann ich ...؟" استعمال کریں۔',
+    },
+  },
+
+  'a1-8': {
+    why: {
+      en: 'The plural is needed whenever you talk about more than one thing: books, friends, kilos, euros. In German, the plural of nouns is formed in several ways and must be learnt with the noun, because only the plural article "die" is regular.\n\nGood news: the plural article is always "die", whatever the gender in the singular. This makes plural sentences easier: "Die Bücher sind neu."',
+      ur: 'جب بھی ایک سے زیادہ چیزوں کی بات کریں (کتابیں، دوست، کلو، یورو) تو جمع کی ضرورت پڑتی ہے۔ جرمن میں اسماء کی جمع کئی طریقوں سے بنتی ہے اور اسے اسم کے ساتھ ہی یاد کرنا پڑتا ہے، کیونکہ صرف جمع کا article "die" باقاعدہ ہے۔\n\nخوشخبری: جمع کا article ہمیشہ "die" ہی ہوتا ہے، واحد میں جنس چاہے کوئی بھی ہو۔ اس سے جمع کے جملے آسان ہو جاتے ہیں: "Die Bücher sind neu."۔',
+    },
+    how: {
+      en: 'The main plural patterns: (1) no change, sometimes with umlaut: der Lehrer → die Lehrer; der Bruder → die Brüder; (2) -e (often with umlaut): der Tag → die Tage; der Stuhl → die Stühle; (3) -er (always with umlaut if possible): das Kind → die Kinder; das Buch → die Bücher; (4) -(e)n: die Frau → die Frauen; die Blume → die Blumen; (5) -s (foreign words): das Auto → die Autos; das Hotel → die Hotels.\n\nTips: nearly all feminine nouns end in -n/-en in the plural (die Schule → die Schulen) and nouns ending in -in add -nen (die Lehrerin → die Lehrerinnen). Many masculine nouns add -e; many neuter nouns add -er or -e. Dative plural adds -n if the plural does not already end in -n or -s: "mit den Kindern".\n\nWriting plural in dictionaries: "der Tag, -e", "das Buch, ¨-er", "die Frau, -en".',
+      ur: 'جمع کے اہم طریقے: (1) کوئی تبدیلی نہیں، کبھی اوملاؤٹ کے ساتھ: der Lehrer → die Lehrer؛ der Bruder → die Brüder؛ (2) -e (اکثر اوملاؤٹ کے ساتھ): der Tag → die Tage؛ der Stuhl → die Stühle؛ (3) -er (جہاں ممکن ہو اوملاؤٹ کے ساتھ): das Kind → die Kinder؛ das Buch → die Bücher؛ (4) -(e)n: die Frau → die Frauen؛ die Blume → die Blumen؛ (5) -s (غیر ملکی الفاظ): das Auto → die Autos؛ das Hotel → die Hotels۔\n\nمشورے: تقریباً تمام مؤنث اسماء کی جمع -n/-en پر ختم ہوتی ہے (die Schule → die Schulen) اور -in والے اسماء میں -nen لگتا ہے (die Lehrerin → die Lehrerinnen)۔ بہت سے مذکر اسماء میں -e اور بہت سے نیوٹر میں -er یا -e لگتا ہے۔ Dativ جمع میں اگر جمع پہلے سے -n یا -s پر ختم نہ ہو تو -n لگتا ہے: "mit den Kindern"۔\n\nلغت میں جمع اس طرح لکھی ہوتی ہے: "der Tag, -e"، "das Buch, ¨-er"، "die Frau, -en"۔',
+    },
+    when: {
+      en: 'Use the plural for numbers above one ("zwei Brüder", "drei Bücher"), for general statements ("Kinder lieben Schokolade"), and for things you count. After numbers, units of measure and money often stay singular: "zwei Kilo", "fünf Euro", "zehn Grad".',
+      ur: 'ایک سے زیادہ اعداد ("zwei Brüder", "drei Bücher")، عمومی بیانات ("Kinder lieben Schokolade") اور گنی جانے والی چیزوں کے لیے جمع استعمال کریں۔ اعداد کے بعد ناپ تول اور رقم کی اکائیاں اکثر واحد رہتی ہیں: "zwei Kilo"، "fünf Euro"، "zehn Grad"۔',
+    },
+    mistakes: {
+      en: '1) Adding -s to everything like English: "Bücher", not "Buchs". 2) Forgetting the umlaut: "die Buecher" or "die Bucher". 3) Using "die" with the singular form: "die Frau" is singular; plural is "die Frauen". 4) Using the singular after numbers: "zwei Kind" is wrong; "zwei Kinder". 5) Learning the noun without its plural. Always memorise "das Kind, -er".',
+      ur: '1) انگریزی کی طرح ہر چیز میں -s لگانا: "Bücher" درست ہے، "Buchs" نہیں۔ 2) اوملاؤٹ بھول جانا: "die Buecher" یا "die Bucher"۔ 3) واحد کی شکل کے ساتھ "die" لگانا: "die Frau" واحد ہے؛ جمع "die Frauen" ہے۔ 4) اعداد کے بعد واحد استعمال کرنا: "zwei Kind" غلط ہے؛ "zwei Kinder"۔ 5) اسم کو جمع کے بغیر سیکھنا؛ ہمیشہ "das Kind, -er" یاد کریں۔',
+    },
+    tips: {
+      en: 'Learn nouns in triples: article – noun – plural ("der Tisch – die Tische"). Make a table of 5 nouns per plural pattern. Count objects around you in German ("drei Stühle, zwei Fenster") for daily practice.',
+      ur: 'اسماء کو تین حصوں میں یاد کریں: article – اسم – جمع ("der Tisch – die Tische")۔ ہر جمع کے طریقے کے 5 اسماء کا جدول بنائیں۔ روزانہ مشق کے لیے اپنے اردگرد کی چیزیں جرمن میں گنیں ("drei Stühle, zwei Fenster")۔',
+    },
+  },
+
+  'a1-9': {
+    why: {
+      en: 'Possessive articles show who owns something: "my book", "your phone", "her sister". Negation lets you say what is not true or what you do not have. You need both to talk about family, belongings and opinions.\n\nGerman has two negation words: "nicht" and "kein". Learning when to use which is a very frequent A1 test point.',
+      ur: 'ملکیتی articles بتاتے ہیں کہ کوئی چیز کس کی ہے: "میری کتاب"، "تمہارا فون"، "اس کی بہن"۔ نفی سے آپ وہ بتاتے ہیں جو سچ نہیں یا جو آپ کے پاس نہیں۔ خاندان، ذاتی چیزوں اور رائے کی بات کرنے کے لیے دونوں ضروری ہیں۔\n\nجرمن میں نفی کے دو لفظ ہیں: "nicht" اور "kein"۔ یہ جاننا کہ کب کون سا استعمال کرنا ہے A1 کے امتحان کا بہت عام نکتہ ہے۔',
+    },
+    how: {
+      en: 'Possessive articles: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr. They take the same endings as "ein/kein": masculine and neuter singular: no ending (mein Vater, mein Kind); feminine and plural: -e (meine Mutter, meine Eltern). In the Accusative, masculine singular gets -en: "Ich liebe meinen Vater."\n\nThe possessive agrees with the OWNER (er = sein, sie = ihr) but its ending agrees with the thing owned: "Sie hat ihren Bruder" (her brother – masculine accusative), "Er hat seine Schwester".\n\nNegation: "kein/keine" negates a noun that has "ein" or no article: "Ich habe ein Auto" → "Ich habe kein Auto." "Ich trinke Kaffee" → "Ich trinke keinen Kaffee." "nicht" negates everything else: verbs ("Ich komme nicht"), adjectives ("Das ist nicht gut"), nouns with a definite article ("Das ist nicht der Lehrer"), adverbs and whole sentences. Position: nicht goes at the end of a short sentence ("Ich arbeite nicht") or before the word it negates ("Ich komme nicht heute, sondern morgen").',
+      ur: 'ملکیتی articles: ich → mein، du → dein، er/es → sein، sie → ihr، wir → unser، ihr → euer، sie → ihr، Sie → Ihr۔ ان کے اختتام "ein/kein" جیسے ہوتے ہیں: مذکر اور نیوٹر واحد میں کوئی اختتام نہیں (mein Vater, mein Kind)؛ مؤنث اور جمع میں -e (meine Mutter, meine Eltern)۔ Akkusativ میں مذکر واحد کو -en ملتا ہے: "Ich liebe meinen Vater."۔\n\nملکیتی لفظ مالک کے مطابق ہوتا ہے (er = sein, sie = ihr) لیکن اس کا اختتام اس چیز کے مطابق ہوتا ہے جس کی ملکیت ہو: "Sie hat ihren Bruder" (اس کا بھائی – مذکر Akkusativ)، "Er hat seine Schwester"۔\n\nنفی: "kein/keine" اس اسم کی نفی کرتا ہے جس کے ساتھ "ein" ہو یا article نہ ہو: "Ich habe ein Auto" → "Ich habe kein Auto."۔ "Ich trinke Kaffee" → "Ich trinke keinen Kaffee."۔ باقی ہر چیز کی نفی "nicht" سے ہوتی ہے: افعال ("Ich komme nicht")، صفات ("Das ist nicht gut")، معرفہ article والے اسماء ("Das ist nicht der Lehrer")، حالیہ الفاظ اور پورے جملے۔ جگہ: مختصر جملے میں nicht آخر میں آتا ہے ("Ich arbeite nicht") یا اس لفظ سے پہلے جس کی نفی ہو ("Ich komme nicht heute, sondern morgen")۔',
+    },
+    when: {
+      en: 'Use possessives for family and belongings: "Das ist mein Bruder." "Wo ist deine Tasche?" "Unser Lehrer ist nett." Use "Ihr" with formal "Sie": "Wie ist Ihr Name?" Use "kein" to say you do not have something ("Ich habe keine Zeit", "keinen Hunger" is also correct) and "nicht" to deny actions or qualities ("Ich verstehe das nicht", "Es ist nicht teuer").',
+      ur: 'خاندان اور ذاتی چیزوں کے لیے ملکیتی الفاظ: "Das ist mein Bruder." "Wo ist deine Tasche؟" "Unser Lehrer ist nett."۔ رسمی "Sie" کے ساتھ "Ihr": "Wie ist Ihr Name؟"۔ کسی چیز کے نہ ہونے کے لیے "kein" ("Ich habe keine Zeit"، "keinen Hunger" بھی درست ہے) اور کام یا خوبی کی نفی کے لیے "nicht" ("Ich verstehe das nicht"، "Es ist nicht teuer")۔',
+    },
+    mistakes: {
+      en: '1) Using "nicht" before a noun with ein: "Ich habe nicht ein Auto" – wrong; "Ich habe kein Auto." 2) Using "kein" with verbs: "Ich komme kein" – wrong; "Ich komme nicht." 3) Using "ihr" for both she and they without checking: "ihr Buch" can mean her book or their book; context tells you. 4) Forgetting the ending: "meine Mutter" (not "mein Mutter"). 5) Writing "ihr" capital: "Ihr" is formal "your". 6) Mixing "sein" (his) with the verb "sein" (to be).',
+      ur: '1) "ein" والے اسم سے پہلے "nicht" لگانا: "Ich habe nicht ein Auto" غلط ہے؛ "Ich habe kein Auto."۔ 2) افعال کے ساتھ "kein" لگانا: "Ich komme kein" غلط ہے؛ "Ich komme nicht."۔ 3) "ihr" کو بغیر دیکھے "اس کا" اور "ان کا" دونوں کے لیے لگانا: "ihr Buch" کا مطلب اس کی کتاب یا ان کی کتاب ہو سکتا ہے؛ سیاق سے پتا چلتا ہے۔ 4) اختتام بھول جانا: "meine Mutter" ("mein Mutter" نہیں)۔ 5) "ihr" کو بڑے حرف سے لکھنا؛ "Ihr" رسمی "آپ کا" ہے۔ 6) "sein" (اس کا) اور فعل "sein" (ہونا) میں الجھنا۔',
+    },
+    tips: {
+      en: 'Remember: "kein = nicht + ein". Say "mein, meine, mein, meine" until the pattern feels natural. Describe your room and family with possessives and then negate each sentence ("Das ist nicht mein Tisch").',
+      ur: 'یاد رکھیں: "kein = nicht + ein"۔ "mein, meine, mein, meine" اس وقت تک دہرائیں جب تک یہ ترتیب فطری نہ لگے۔ اپنے کمرے اور خاندان کو ملکیتی الفاظ سے بیان کریں، پھر ہر جملے کی نفی کریں ("Das ist nicht mein Tisch")۔',
+    },
+  },
+
+  'a1-10': {
+    why: {
+      en: 'Describing your day is one of the most common A1 speaking and writing tasks ("Beschreiben Sie Ihren Tag"). It combines the present tense, separable verbs, time expressions and word order. Knowing time expressions also lets you make appointments and understand timetables.',
+      ur: 'اپنے دن کو بیان کرنا A1 کے بولنے اور لکھنے کے سب سے عام کاموں میں سے ہے ("Beschreiben Sie Ihren Tag")۔ اس میں حالِ حاضر، الگ ہونے والے افعال، وقت کے الفاظ اور جملے کی ترتیب سب شامل ہیں۔ وقت کے الفاظ جاننے سے آپ اپائنٹمنٹ بھی طے کر سکتے اور ٹائم ٹیبل بھی سمجھ سکتے ہیں۔',
+    },
+    how: {
+      en: 'Clock time: "um + time": "Um 7 Uhr stehe ich auf." Duration: "von ... bis ...": "Von 9 bis 12 Uhr habe ich Unterricht." Parts of the day: am Morgen, am Vormittag, am Mittag, am Nachmittag, am Abend, in der Nacht. Frequency: immer (always), oft (often), manchmal (sometimes), selten (rarely), nie (never), jeden Tag (every day), montags (on Mondays). Sequence: zuerst (first), dann (then), danach (after that), später (later), zum Schluss (finally).\n\nSentence pattern: time first, then the verb, then the subject: "Dann frühstücke ich." Alternatively subject first: "Ich frühstücke dann." Order inside the sentence: Time – Manner – Place (TeKaMoLo): "Ich fahre morgen mit dem Bus zur Arbeit."\n\nSample day: "Ich stehe um 6 Uhr auf. Dann dusche ich und frühstücke. Um 8 Uhr gehe ich zur Schule. Von 9 bis 13 Uhr habe ich Unterricht. Nachmittags mache ich Hausaufgaben. Abends sehe ich fern und gehe um 22 Uhr schlafen."',
+      ur: 'گھڑی کا وقت: "um + وقت": "Um 7 Uhr stehe ich auf."۔ مدت: "von ... bis ...": "Von 9 bis 12 Uhr habe ich Unterricht."۔ دن کے حصے: am Morgen (صبح)، am Vormittag (دوپہر سے پہلے)، am Mittag (دوپہر)، am Nachmittag (سہ پہر)، am Abend (شام)، in der Nacht (رات)۔ تکرار: immer (ہمیشہ)، oft (اکثر)، manchmal (کبھی کبھی)، selten (شاذ و نادر)، nie (کبھی نہیں)، jeden Tag (ہر روز)، montags (ہر پیر کو)۔ ترتیب: zuerst (پہلے)، dann (پھر)، danach (اس کے بعد)، später (بعد میں)، zum Schluss (آخر میں)۔\n\nجملے کی ساخت: پہلے وقت، پھر فعل، پھر فاعل: "Dann frühstücke ich."۔ یا فاعل پہلے: "Ich frühstücke dann."۔ جملے کے اندر ترتیب: وقت – طریقہ – جگہ (TeKaMoLo): "Ich fahre morgen mit dem Bus zur Arbeit."۔\n\nایک دن کی مثال: "Ich stehe um 6 Uhr auf. Dann dusche ich und frühstücke. Um 8 Uhr gehe ich zur Schule. Von 9 bis 13 Uhr habe ich Unterricht. Nachmittags mache ich Hausaufgaben. Abends sehe ich fern und gehe um 22 Uhr schlafen."۔',
+    },
+    when: {
+      en: 'Use these structures when you talk about your routine, make or change appointments ("Ich habe am Mittwoch um 15 Uhr einen Termin"), plan the week with friends ("Hast du am Samstag Zeit?"), and in short A1 writing texts such as emails to a friend. Use "um" for exact times, "von ... bis" for periods, and "am" with days and parts of the day.',
+      ur: 'اپنا معمول بتاتے وقت، اپائنٹمنٹ لیتے یا بدلتے وقت ("Ich habe am Mittwoch um 15 Uhr einen Termin")، دوستوں کے ساتھ ہفتے کی منصوبہ بندی میں ("Hast du am Samstag Zeit؟") اور دوست کو ای میل جیسی مختصر A1 تحریر میں یہ ساختیں استعمال کریں۔ ٹھیک وقت کے لیے "um"، مدت کے لیے "von ... bis" اور دنوں اور دن کے حصوں کے ساتھ "am" لگائیں۔',
+    },
+    mistakes: {
+      en: '1) Mixing "um" and "am": "um 8 Uhr" but "am Montag", "am Abend". 2) Keeping the subject before the verb after a time word: "Dann ich frühstücke" – wrong. 3) Forgetting the separable prefix at the end: "Um 6 Uhr stehe ich" – wrong; add "auf". 4) Using "in" for parts of the day: "in dem Morgen" – wrong; "am Morgen" or "morgens". 5) Confusing "morgen" (tomorrow) with "Morgen" (morning).',
+      ur: '1) "um" اور "am" میں گڑبڑ: "um 8 Uhr" مگر "am Montag", "am Abend"۔ 2) وقت کے لفظ کے بعد بھی فاعل کو فعل سے پہلے رکھنا: "Dann ich frühstücke" غلط ہے۔ 3) آخر میں الگ ہونے والا سابقہ بھول جانا: "Um 6 Uhr stehe ich" غلط ہے؛ "auf" لگائیں۔ 4) دن کے حصوں کے ساتھ "in" لگانا: "in dem Morgen" غلط ہے؛ "am Morgen" یا "morgens"۔ 5) "morgen" (کل) اور "Morgen" (صبح) میں الجھنا۔',
+    },
+    tips: {
+      en: 'Write your real day in 8–10 sentences using zuerst, dann, danach, später. Read it aloud, then say it without looking. Change the time words to describe your weekend. Practise the question "Wann stehst du auf?" with friends.',
+      ur: 'اپنے اصل دن کو zuerst, dann, danach, später کے ساتھ 8-10 جملوں میں لکھیں۔ بلند آواز سے پڑھیں، پھر دیکھے بغیر بولیں۔ وقت کے الفاظ بدل کر اپنی چھٹی کا دن بیان کریں۔ دوستوں کے ساتھ "Wann stehst du auf؟" جیسا سوال مشق کریں۔',
+    },
+  },
+};

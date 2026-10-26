@@ -10,6 +10,13 @@
  * Offline local data. Subject order for `present`:
  * ich, du, er/sie/es, wir, ihr, sie/Sie.
  */
+/** Shared table shape used by the grammar reference sections. */
+interface Table {
+  title: string;
+  head: string[];
+  rows: string[][];
+}
+
 export interface VerbConj {
   inf: string;
   en: string;
